@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_USER = 'SEU_DOCKERHUB_USER'
+        DOCKERHUB_USER = 'piercodegroup'
         DOCKERHUB_REPO = 'pdi-ecommerce'
         GIT_REPO = 'https://github.com/piercodegroup/pdi-ecommerce.git'
         GIT_BRANCH = 'main'
@@ -17,7 +17,7 @@ pipeline {
 
         stage('Composer Install') {
             steps {
-                sh 'composer install --no-interaction --prefer-dist'
+                sh "docker run --rm -v ${WORKSPACE}:/app -w /app composer install --no-interaction --prefer-dist"
             }
         }
 
