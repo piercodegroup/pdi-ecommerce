@@ -56,3 +56,41 @@ O sistema opera com **dois perfis de usuários**:
 📌 Imagem deve ser inserida aqui assim que estiver no repositório:  
 ```md
 ![Diagrama de Classes](docs/diagrama_classes.png)
+
+| Camada         | Tecnologia                      |
+| -------------- | ------------------------------- |
+| Linguagem      | PHP 8+                          |
+| Framework      | Laravel                         |
+| Banco de Dados | MySQL                           |
+| Front-end      | HTML, TailwindCSS, JavaScript   |
+| Autenticação   | Google OAuth                    |
+| Ferramentas    | Composer, Artisan, MySQL Server |
+
+
+
+
+
+
+⚙️ Instalação e Execução
+# Clonar o repositório
+git clone https://github.com/seuusuario/padoca-dona-ines.git
+
+# Acessar pasta
+cd padoca-dona-ines
+
+# Instalar dependências
+composer install
+
+# Configurar ambiente
+cp .env.example .env
+php artisan key:generate
+
+# Criar banco e migrar tabelas
+php artisan migrate --seed
+
+# Iniciar servidor
+php artisan serve
+
+
+Acesse no navegador:
+➡ http://localhost:8000/
