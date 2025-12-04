@@ -49,13 +49,6 @@ O sistema opera com **dois perfis de usuários**:
 
 ---
 
-## 🧠 Diagrama de Classes
-
-> O diagrama de classes representa todas as entidades e relacionamentos do negócio.
-
-📌 Imagem deve ser inserida aqui assim que estiver no repositório:  
-
-![Diagrama de Classes](docs/diagrama_classes.png)
 
 | Camada         | Tecnologia                      |
 | -------------- | ------------------------------- |
@@ -67,11 +60,10 @@ O sistema opera com **dois perfis de usuários**:
 | Ferramentas    | Composer, Artisan, MySQL Server |
 
 
-
-
 ```md
 
 ⚙️ Instalação e Execução
+
 # Clonar o repositório
 git clone https://github.com/seuusuario/padoca-dona-ines.git
 
@@ -90,7 +82,6 @@ php artisan migrate --seed
 
 # Iniciar servidor
 php artisan serve
-
 
 Acesse no navegador:
 ➡ http://localhost:8000/
