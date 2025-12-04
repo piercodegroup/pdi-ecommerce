@@ -1,13 +1,58 @@
-# PDI - E-commerce de Padaria
+# 📌 Padoca Dona Inês — Sistema Web de Delivery e Gestão de Padaria
 
-Repo: https://github.com/piercodegroup/pdi-ecommerce
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 
-## Como rodar localmente (Docker)
-1. Copie o arquivo `.env.example` para `.env` e ajuste as variáveis do DB.
-2. Build e up: docker-compose up -d --build
+O **Padoca Dona Inês** é um sistema web completo para uma padaria com vendas via delivery e painel administrativo.  
+Foi desenvolvido como **Projeto de Desenvolvimento Integrador (PDI)** com o objetivo de modernizar a operação e oferecer uma melhor experiência aos clientes.
 
-3. Acesse: http://localhost:8080
+---
 
-## Pipeline CI/CD
-Arquivo: `Jenkinsfile` na raiz. Pipeline cria imagem Docker e faz push para Docker Hub, depois faz deploy via docker-compose.
+## 🥖 Sobre o Projeto
 
+A aplicação contempla rotinas de **gestão interna** para administradores e **compras online** para clientes, permitindo:
+
+✔ Venda de produtos online  
+✔ Controle de pedidos e entregas  
+✔ Cadastro de clientes, endereços e cartões  
+✔ Programa de fidelidade  
+✔ Relatórios para tomada de decisão
+
+O sistema opera com **dois perfis de usuários**:
+
+| Perfil | Recursos |
+|--------|----------|
+| 👨‍💼 Administrador | Gestão completa do negócio |
+| 🛒 Cliente | Compra rápida, prática e com fidelidade |
+
+---
+
+## ✨ Funcionalidades
+
+### 🎯 Administrador
+- Gestão de Usuários (CRUD + níveis de acesso)
+- Gestão de Categorias e Produtos (CRUD com imagens)
+- Gestão de Clientes com histórico de pedidos
+- Gestão de Pedidos (status: pendente → em preparo → a caminho → entregue)
+- Relatórios e estatísticas:
+  - Produtos mais vendidos
+  - Vendas por período
+  - Fluxo de clientes fidelizados
+
+### 🛍️ Cliente
+- Cadastro/Login (incluindo 🔐 Google OAuth)
+- Catálogo de produtos com imagens e preços
+- Carrinho e confirmação de pedido com entrega
+- Cadastro de cartão e endereço
+- Acompanhamento do status do pedido
+- Programa de fidelidade com acúmulo e uso de pontos
+- Máscara automática de CEP
+
+---
+
+## 🧠 Diagrama de Classes
+
+> O diagrama de classes representa todas as entidades e relacionamentos do negócio.
+
+📌 Imagem deve ser inserida aqui assim que estiver no repositório:  
+```md
+![Diagrama de Classes](docs/diagrama_classes.png)
