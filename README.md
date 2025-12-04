@@ -54,7 +54,7 @@ O sistema opera com **dois perfis de usuários**:
 > O diagrama de classes representa todas as entidades e relacionamentos do negócio.
 
 📌 Imagem deve ser inserida aqui assim que estiver no repositório:  
-```md
+
 ![Diagrama de Classes](docs/diagrama_classes.png)
 
 | Camada         | Tecnologia                      |
@@ -69,7 +69,7 @@ O sistema opera com **dois perfis de usuários**:
 
 
 
-
+```md
 
 ⚙️ Instalação e Execução
 # Clonar o repositório
